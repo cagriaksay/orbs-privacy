@@ -12,10 +12,24 @@ Fruit Me is an augmented reality game that uses your device's front-facing camer
 
 **We do not collect, store, or transmit any personal data.**
 
-### Camera & Face Tracking
-- The front-facing camera is used solely for real-time face tracking during gameplay (detecting mouth position and movement).
-- Face tracking data is processed entirely on your device and is never recorded, stored, or sent anywhere.
-- Camera footage is only used for optional gameplay video recording, which is saved locally to your device and shared only if you explicitly choose to do so.
+### TrueDepth Camera and Face Data
+- Fruit Me uses Apple's ARKit TrueDepth face tracking only to detect mouth position, mouth openness (jaw open value), and mouth width in real time for gameplay controls.
+- This face tracking data is processed entirely on-device, in memory, and is never recorded, stored, transmitted, or shared by Fruit Me.
+- Fruit Me does not perform face recognition, does not identify users, and does not create or store a biometric face template.
+- Camera frames from the front camera are used only for live gameplay rendering.
+
+### Optional Gameplay Video Recording
+- If you choose to record gameplay, the recording may include camera video and microphone audio.
+- Recordings are saved locally on your device and are only shared if you explicitly choose to share them using iOS share actions.
+- Face tracking values used for gameplay (mouth position/openness/width) are not embedded as separate data and are not transmitted.
+
+### Face Data Sharing and Third Parties
+- Fruit Me does not share, sell, or disclose TrueDepth or face tracking data to any third party.
+- No face tracking data is sent to Aksay Games servers because Fruit Me does not operate backend servers for this data.
+
+### Face Data Storage and Retention
+- TrueDepth face tracking values are ephemeral and exist only for the current frame during gameplay.
+- Face tracking data retention period: 0 seconds after processing (not stored).
 
 ### Microphone
 - The microphone is used solely to capture audio for optional gameplay video recording.
